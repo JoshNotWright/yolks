@@ -46,4 +46,4 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            ghcr.io/JoshNotWright/yolks:java_${{ matrix.tag }}
+            ghcr.io/joshnotwright/yolks:java_${{ matrix.tag }}
