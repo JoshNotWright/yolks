@@ -34,7 +34,7 @@ RUN         apt-get update -y \
             && chmod 1777 /tmp  # Ensure /tmp has the correct permissions (rwxrwxrwt)
 
 USER        container
-ENV         USER=container HOME=/home/container TMPDIR=/tmp  # Set TMPDIR to /tmp if needed
+ENV         USER=container HOME=/home/container TMPDIR=/tmp
 WORKDIR     /home/container
 
 COPY        ./../entrypoint.sh /entrypoint.sh
